@@ -9,6 +9,7 @@ header {
   margin-top: 10px;
   width: inherit;
   min-height: 50px;
+  display: none;
 }
 
 .nav-bar {
