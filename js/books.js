@@ -16,12 +16,10 @@ class Interface {
   static displayBooks() {
     // const libray = [
     //   {
-    //     id: 1,
     //     title: "Things fall Apart",
     //     author: "Chinua Achebe",
     //   },
     //   {
-    //     id: 2,
     //     title: "Gone too soon",
     //     author: "Dele falasi",
     //   },
@@ -38,7 +36,7 @@ class Interface {
     bookDetails.innerHTML = `
         <p tabindex="0" class="list-item">${book.title}</p>
         <p tabindex="0" class="list-item">${book.author}</p>
-        <button tabindex="0" class="delete-button delete">Remove</button>
+        <button value="${book.title}" tabindex="0" class="delete-button delete">Remove</button>
         `;
     list.appendChild(bookDetails);
   }
@@ -50,9 +48,10 @@ class Interface {
   }
 
   // Deleting books
-  static deleteBook(del) {
+  static deleteBook(del, tit) {
     if (del.classList.contains('delete')) {
       del.parentElement.remove();
+      Store.removeBook(tit)
       Interface.showAlert('Book has been deleted', 'error');
     }
   }
@@ -74,7 +73,6 @@ class Interface {
 }
 
 // Local Storage
-
 class Store {
   static getBooks() {
     let books;
@@ -94,7 +92,7 @@ class Store {
   }
 
   static removeBook(title) {
-    const books = Store.getBooks();
+    let books = Store.getBooks();
 
     books.forEach((book, index) => {
       if (book.title === title) {
@@ -135,5 +133,6 @@ document.getElementById('addbook').addEventListener('click', (e) => {
 
 // Remove book
 document.querySelector('#books').addEventListener('click', (e) => {
-  Interface.deleteBook(e.target);
+    console.log(e.target.value)
+  Interface.deleteBook(e.target,e.target.value);
 });
