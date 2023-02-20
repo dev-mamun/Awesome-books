@@ -25,7 +25,7 @@
 
 # 📖 Awesome Books <a name="about-project"></a>
 
-> Its a book collection project.
+> It's a book collection project. Use only JavaScript & CSS to build this.
 
 ### 🛠 Tech Stack <a name="tech-stack"></a>
 
@@ -37,9 +37,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- Intro
-- Exhibitors
-- Speakers
+- Book List
+- Add New
+- Delete
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -75,7 +75,7 @@ Once you have git installed on your machine you can clone project by running the
 To clone your project to your local machine
 
 ```sh
-  git clone git@github.com:dev-mamun/microverse-portfolio.git
+  git clone git@github.com:dev-mamun/Awesome-books.git
 ```
 
 Alternatively, you can download the zip file of your project by clicking on the `Code` button on the right side of your
@@ -86,7 +86,7 @@ project page and clicking on `Download ZIP`
 Install this project with:
 
 ```sh
-  cd microverse-portfolio
+  cd Awesome-books
 ```
 
 For this project, you don't need to install any dependencies but if you prefer to install any dev dependencies run:
@@ -150,11 +150,9 @@ I would like to thank...
 
 - Teammates
 - Mentors
-- Youtube tutorials
+- YouTube tutorials
 - Microverse guides
 - Google Search
-- [SoftExpo](https://softexpo.com.bd/home)
-- [Cindy Shin in Behance](https://www.behance.net/adagio07)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
