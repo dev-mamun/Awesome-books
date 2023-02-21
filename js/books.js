@@ -15,16 +15,6 @@ class Book {
 // UI class
 class Interface {
   static displayBooks() {
-    // const libray = [
-    //   {
-    //     title: "Things fall Apart",
-    //     author: "Chinua Achebe",
-    //   },
-    //   {
-    //     title: "Gone too soon",
-    //     author: "Dele falasi",
-    //   },
-    // ];
     // Looping through the array
     const books = Store.getBooks();
     console.log('books: ', books);
@@ -36,7 +26,7 @@ class Interface {
     const list = document.getElementById('books');
     const bookDetails = document.createElement('div');
     bookDetails.innerHTML = `<article>
-        <div>${book.title} by ${book.author}</div>
+        <div>"${book.title}" by ${book.author}</div>
         <button value="${book.title}" class="btn-danger delete">Remove</button>
         </article>
         `;
@@ -179,6 +169,5 @@ document.onreadystatechange = () => {
     };
     updateTime();
     setInterval(updateTime, 1000);
-
   }
 };
