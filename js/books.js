@@ -36,8 +36,7 @@ class Interface {
     const bookDetails = document.createElement('div');
     bookDetails.innerHTML = `<article>
         <div>${book.title} by ${book.author}</div>
-        <button class="btn-danger delete">Remove</button>
-        <button value="${book.title}" tabindex="0" class="delete-button delete">Remove</button>
+        <button value="${book.title}" class="btn-danger delete">Remove</button>
         </article>
         `;
     list.appendChild(bookDetails);
@@ -106,62 +105,69 @@ class Store {
   }
 }
 
+document.onreadystatechange = () => {
+  if (document.readyState === 'complete') {
 // Diplay book
-document.addEventListener('DOMContentLoaded', Interface.displayBooks);
+    document.addEventListener('DOMContentLoaded', Interface.displayBooks);
 // Add book
-document.getElementById('addbook').addEventListener('click', (e) => {
-  e.preventDefault();
-  // get values from input
-  const title = document.getElementById('title').value;
-  const author = document.getElementById('author').value;
+    document.getElementById('addbook').addEventListener('click', (e) => {
+      e.preventDefault();
+      // get values from input
+      const title = document.getElementById('title').value;
+      const author = document.getElementById('author').value;
 
-  // Making sure the input field has a value
-  if (title === '' || author === '') {
-    Interface.showAlert('Fill all the input field', 'error');
-  } else {
-    Interface.showAlert('Book has been added to the Libray', 'success');
-    // creating a const(book) for each of the new books
-    const book = new Book(title, author);
+      // Making sure the input field has a value
+      if (title === '' || author === '') {
+        Interface.showAlert('Fill all the input field', 'error');
+      } else {
+        Interface.showAlert('Book has been added to the Libray', 'success');
+        // creating a const(book) for each of the new books
+        const book = new Book(title, author);
 
-    // Adding book to Interface
-    Interface.addBook(book);
+        // Adding book to Interface
+        Interface.addBook(book);
 
-    // store Book
-    Store.addBook(book);
+        // store Book
+        Store.addBook(book);
 
-    // clearing the inputfield after submitting
-    Interface.clearInputfield();
-  }
-});
+        // clearing the inputfield after submitting
+        Interface.clearInputfield();
+      }
+    });
 
 // Remove book
-document.querySelector('#books').addEventListener('click', (e) => {
-  console.log(e.target.value)
-  Interface.deleteBook(e.target, e.target.value);
-});
+    document.querySelector('#books').addEventListener('click', (e) => {
+      console.log(e.target.value)
+      Interface.deleteBook(e.target, e.target.value);
+    });
 
-const menu = document.querySelectorAll('.nav-menu');
-const listBtn = document.getElementById('books');
-const addBtn = document.getElementById('book-frm');
-const contactBtn = document.getElementById('contacts');
-console.log(menu);
-menu.forEach((btn) => {
-  btn.addEventListener('click', (e) => {
-    addBtn.classList.add('hidden');
-    listBtn.classList.add('hidden');
-    contactBtn.classList.add('hidden');
-    switch (e.target.id) {
-      case 'list':
-        listBtn.classList.remove('hidden');
-        break;
-      case 'add':
-        addBtn.classList.remove('hidden');
-        break;
-      case 'contact':
-        contactBtn.classList.remove('hidden');
-        break;
-      default:
-        listBtn.classList.remove('hidden');
-    }
-  });
-});
+    const menu = document.querySelectorAll('.nav-menu');
+    const listBtn = document.getElementById('books');
+    const addBtn = document.getElementById('book-frm');
+    const contactBtn = document.getElementById('contacts');
+    const heading = document.getElementById('heading');
+    menu.forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        addBtn.classList.add('hidden');
+        listBtn.classList.add('hidden');
+        contactBtn.classList.add('hidden');
+        switch (e.target.id) {
+          case 'list':
+            heading.textContent = "All awesome books";
+            listBtn.classList.remove('hidden');
+            break;
+          case 'add':
+            heading.textContent = "Add a new book";
+            addBtn.classList.remove('hidden');
+            break;
+          case 'contact':
+            heading.textContent = "Contact information";
+            contactBtn.classList.remove('hidden');
+            break;
+          default:
+            listBtn.classList.remove('hidden');
+        }
+      });
+    });
+  }
+};
