@@ -25,9 +25,9 @@
         <nav class="nav-bar">
             <a href="index.html" class="nav-branding" title="Awesome Books" rel="noopener noreferrer">Awesome Books</a>
             <ul class="menu">
-                <li><a id="list" class="nav-menu" href="#">List</a></li>
-                <li><a id="add" class="nav-menu" href="#">Add New</a></li>
-                <li><a id="contact" class="nav-menu" href="#">Contact</a></li>
+                <li><a id="list" class="nav-menu" href="#showlist">List</a></li>
+                <li><a id="add" class="nav-menu" href="#addnew">Add New</a></li>
+                <li><a id="contact" class="nav-menu" href="#contactus">Contact</a></li>
             </ul>
         </nav>
         <div id="time">
@@ -38,9 +38,9 @@
     <section id="books"></section>
     <section id="book-frm" class="hidden">
         <div class="addnewbook">
-            <input type="text" placeholder="Title" id="title">
-            <input type="text" placeholder="Author" id="author">
-            <button type="button" id="addbook">ADD</button>
+            <input type="text" placeholder="Title" id="title" value="" required />
+            <input type="text" placeholder="Author" id="author" required />
+            <button type="button" id="addbook" class="btn-default">Add</button>
         </div>
     </section>
     <scction id="contacts"></scction>

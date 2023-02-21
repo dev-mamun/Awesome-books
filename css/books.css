@@ -13,14 +13,8 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  align-items: center;
+  align-items: flex-end;
   gap: 13px;
-}
-
-button,
-input {
-  padding: 10px;
-  outline: none;
 }
 
 .books {
@@ -42,16 +36,18 @@ input {
 }
 
 .alert-error {
-  background-color: rgb(230, 7, 7);
-  color: white;
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
   font-size: 20px;
   padding: 10px;
   border-radius: 5px;
 }
 
 .alert-success {
-  background-color: rgb(14, 233, 14);
-  color: white;
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
   font-size: 20px;
   padding: 10px;
   border-radius: 5px;

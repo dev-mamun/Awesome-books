@@ -27,6 +27,7 @@ class Interface {
     // ];
     // Looping through the array
     const books = Store.getBooks();
+    console.log('books: ', books);
     books.forEach((book) => Interface.addBook(book));
   }
 
@@ -69,7 +70,7 @@ class Interface {
     const header = document.querySelector('.titletag');
     containerELement.insertBefore(newdiv, header);
     // Vanish in 3 seconds
-    setTimeout(() => document.querySelector('.alert').remove(), 3000);
+    setTimeout(() => document.querySelector('.alert').remove(), 2000);
   }
 }
 
@@ -106,9 +107,10 @@ class Store {
 }
 
 document.onreadystatechange = () => {
+  // Diplay book
+  document.addEventListener('DOMContentLoaded', Interface.displayBooks);
+
   if (document.readyState === 'complete') {
-// Diplay book
-    document.addEventListener('DOMContentLoaded', Interface.displayBooks);
 // Add book
     document.getElementById('addbook').addEventListener('click', (e) => {
       e.preventDefault();
