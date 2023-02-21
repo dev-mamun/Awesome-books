@@ -101,12 +101,12 @@ section {
   padding: 10px;
 }
 
-article:nth-child(odd) {
-  background-color: #ddd;
+#books div:nth-child(odd) article {
+  background: white;
   border: 1px solid #ddd;
 }
 
-article:nth-child(even) {
-  background-color: #ddd;
-  border: 1px solid black;
+#books div:nth-child(even) article {
+  background: #ddd;
+  border: 1px solid #ddd;
 }
