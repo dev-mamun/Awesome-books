@@ -167,3 +167,7 @@ img {
 .btn-default:hover::before {
   height: 100%;
 }
+
+.hidden {
+  display: none !important;
+}

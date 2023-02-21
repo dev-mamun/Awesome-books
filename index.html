@@ -25,16 +25,16 @@
         <nav class="nav-bar">
             <a href="index.html" class="nav-branding" title="Awesome Books" rel="noopener noreferrer">Awesome Books</a>
             <ul class="menu">
-                <li><a href="#">List</a></li>
-                <li><a href="#">Add New</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a id="list" href="#">List</a></li>
+                <li><a id="add" href="#">Add New</a></li>
+                <li><a id="contact" href="#">Contact</a></li>
             </ul>
         </nav>
         <div id="time">
             <time>March 19th 2021, 9:25:32 am</time>
         </div>
     </header>
-    <section id="content">
+    <section id="book-list">
         <h1>All awesome books</h1>
         <article>
             <div>This is test</div>
@@ -42,6 +42,8 @@
         </article>
 
         <div class="books" id="books"></div>
+    </section>
+    <section id="book-frm" class="hidden">
         <div class="addnewbook">
             <h2 class="titletag">Add a new book</h2>
             <input type="text" placeholder="Title" id="title">
@@ -54,7 +56,7 @@
     </footer>
 </main>
 
-<script src="https://kit.fontawesome.com/cddc9bcff3.js" crossorigin="anonymous"></script>
+<!--<script src="https://kit.fontawesome.com/cddc9bcff3.js" crossorigin="anonymous"></script>-->
 <script src="js/books.js"></script>
 </body>
 </html>
