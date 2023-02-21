@@ -4,3 +4,67 @@
  * Created: 2/20/23
  * Author: Abdullah Al Mamun <mamun1214@gmail.com>
  */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-top: 10%;
+}
+
+.addnewbook {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 13px;
+}
+
+button,
+input {
+  padding: 10px;
+  outline: none;
+}
+
+.books {
+  display: flex;
+  flex-direction: column;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+}
+
+.alert-error {
+  background-color: rgb(230, 7, 7);
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.alert-success {
+  background-color: rgb(14, 233, 14);
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
