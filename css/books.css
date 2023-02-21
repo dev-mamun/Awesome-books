@@ -94,4 +94,23 @@ article {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: 10px auto;
+  padding: 5px;
+}
+
+section {
+  width: 100%;
+  border: 1px solid black;
+  margin: auto;
+  padding: 10px;
+}
+
+article:nth-child(odd) {
+  background: white;
+  border: 1px solid #ddd;
+}
+
+article:nth-child(even) {
+  background: #ddd;
+  border: 1px solid #ddd;
 }
