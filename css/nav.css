@@ -20,19 +20,18 @@ header {
   border: 1px solid grey;
 }
 
-.nav-branding{
+.nav-branding {
   margin-left: 10px;
   text-decoration: none;
   color: black;
 }
+
 .menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-
   justify-content: flex-start;
-
 }
 
 .menu li {
@@ -58,10 +57,10 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
 }
 
-#time{
+#time {
   width: 100%;
   height: 20px;
   text-align: right;
