@@ -178,8 +178,6 @@ document.onreadystatechange = () => {
       currentTime.innerHTML = now.toDateString() +", "+ now.toLocaleTimeString('en-US');
     };
     updateTime();
-    //March 19th 2021, 9:25:32 am
-    //Tue, 21 Feb 2023 11:39:25 GMT
     setInterval(updateTime, 1000);
 
   }
