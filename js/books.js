@@ -26,7 +26,7 @@ class Interface {
     const list = document.getElementById('books');
     const bookDetails = document.createElement('div');
     bookDetails.innerHTML = `<article>
-        <div>${book.title} by ${book.author}</div>
+        <div>"${book.title}" by ${book.author}</div>
         <button value="${book.title}" class="btn-danger delete">Remove</button>
         </article>
         `;

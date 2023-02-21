@@ -101,12 +101,16 @@ section {
   padding: 10px;
 }
 
+article{
+  justify-content: space-around;
+}
+
 article:nth-child(odd) {
-  background: white;
+  background:ddd;
   border: 1px solid #ddd;
 }
 
 article:nth-child(even) {
   background: #ddd;
-  border: 1px solid #ddd;
+  border: 1px solid black;
 }
