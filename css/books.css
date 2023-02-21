@@ -95,8 +95,8 @@ article {
 }
 
 section {
-  width: 100%;
-  border: 1px solid black;
+  width: 80%;
+  border: 2px solid black;
   margin: auto;
   padding: 10px;
 }
