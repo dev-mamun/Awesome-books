@@ -15,16 +15,6 @@ class Book {
 // UI class
 class Interface {
   static displayBooks() {
-    // const libray = [
-    //   {
-    //     title: "Things fall Apart",
-    //     author: "Chinua Achebe",
-    //   },
-    //   {
-    //     title: "Gone too soon",
-    //     author: "Dele falasi",
-    //   },
-    // ];
     // Looping through the array
     const books = Store.getBooks();
     console.log('books: ', books);
@@ -179,6 +169,5 @@ document.onreadystatechange = () => {
     };
     updateTime();
     setInterval(updateTime, 1000);
-
   }
 };
