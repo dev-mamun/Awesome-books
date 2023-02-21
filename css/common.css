@@ -20,6 +20,16 @@ body {
   align-items: center;
 }
 
+button,
+input {
+  padding: 10px;
+  outline: none;
+}
+
+input {
+  width: 100%;
+}
+
 .w-90 {
   width: 90%;
 }
@@ -34,23 +44,22 @@ img {
 }
 
 .btn-success {
-  width: auto;
-  height: 48px;
+  min-width: 100px;
+  height: 40px;
   color: #fff;
   display: inline-block;
   text-decoration: none;
   font-style: normal;
   font-weight: 800;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: 15px;
   letter-spacing: 0.03em;
-  padding: 12px;
+  padding: 10px;
   transition: 0.2s all;
   background: #008552;
   border-radius: 4px;
   border: 0;
   cursor: pointer;
-  margin: 15px 0;
 }
 
 .btn-success::before {
@@ -79,7 +88,7 @@ img {
 }
 
 .btn-danger {
-  width: auto;
+  min-width: 100px;
   height: 40px;
   color: #fff;
   display: inline-block;
@@ -121,23 +130,22 @@ img {
 }
 
 .btn-default {
-  width: auto;
-  height: 48px;
+  min-width: 100px;
+  height: 40px;
   color: black;
   display: inline-block;
   text-decoration: none;
   font-style: normal;
   font-weight: 800;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: 15px;
   letter-spacing: 0.03em;
-  padding: 12px;
+  padding: 10px;
   transition: 0.2s all;
   background: white;
   border-radius: 4px;
   border: 1px solid #d3d3d3;
   cursor: pointer;
-  margin: 15px 0;
 }
 
 .btn-default::before {
