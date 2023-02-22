@@ -73,7 +73,6 @@ footer {
   position: absolute;
   bottom: 0;
   left: 0;
-  display: flex;
   justify-content: center;
 }
 
@@ -119,7 +118,7 @@ article:nth-child(even) {
   border: 1px solid #ddd;
 }
 
-h1{
+h1 {
   position: absolute;
   top: 20%;
   display: flex;
@@ -127,7 +126,7 @@ h1{
   width: 50%;
 }
 
-.contacts{
+.contacts {
   text-align: left;
   display: grid;
   gap: 10px;
@@ -136,12 +135,11 @@ h1{
   font-weight: 600;
 }
 
-.contacts ul{
+.contacts ul {
   list-style-type: circle;
   padding: 5px;
 }
 
-
-.contacts ul li{
+.contacts ul li {
   padding: 5px;
 }
