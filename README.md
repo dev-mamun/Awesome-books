@@ -121,6 +121,12 @@ project.
 - Twitter: [@CoderKnight](https://twitter.com/CoderKnight) and [@Danielutibe07](https://twitter.com/Danielutibe07?t=2kvKPTZQ7IGCw2FugE9xCQ&s=09)
 - LinkedIn: [Mamun](https://www.linkedin.com/in/dev-mamun/) and [@AkpanDaniel](https://www.linkedin.com/in/akpan-daniel-785888215/)
 
+👤 **Akpan Daniel** 
+
+- GitHub: [@danutibe07](https://github.com/danutibe07)
+- [@Danielutibe07](https://twitter.com/Danielutibe07?t=2kvKPTZQ7IGCw2FugE9xCQ&s=09)
+- [@AkpanDaniel](https://www.linkedin.com/in/akpan-daniel-785888215/)
+
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
