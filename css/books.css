@@ -126,3 +126,22 @@ h1{
   justify-content: center;
   width: 50%;
 }
+
+.contacts{
+  text-align: left;
+  display: grid;
+  gap: 10px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.contacts ul{
+  list-style-type: circle;
+  padding: 5px;
+}
+
+
+.contacts ul li{
+  padding: 5px;
+}
