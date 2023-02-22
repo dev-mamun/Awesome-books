@@ -73,7 +73,6 @@ class Store {
     } else {
       books = JSON.parse(localStorage.getItem('books'));
     }
-
     return books;
   }
 
@@ -89,7 +88,7 @@ class Store {
     books.forEach((book, index) => {
       if (book.title === title) {
         console.log('index: ',index);
-        //books.splice(index, 1);
+        books.splice(index, 1);
       }
     });
 
