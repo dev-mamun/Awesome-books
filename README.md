@@ -115,7 +115,7 @@ project.
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Abdullah AL mamun and Akpan Daniel** 
+👤 **Abdullah AL mamun** 
 
 - GitHub: [@dev-mamun](https://github.com/dev-mamun) 
 - Twitter: [@CoderKnight](https://twitter.com/CoderKnight)
