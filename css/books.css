@@ -64,13 +64,17 @@ main {
 }
 
 footer {
-  margin-top: 10px;
-  width: inherit;
+  width: 100%;
   min-height: 50px;
   border: 1px solid grey;
   display: flex;
   align-items: center;
   padding: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
 }
 
 #book-list {
@@ -95,10 +99,14 @@ article {
 }
 
 section {
-  width: 80%;
-  border: 2px solid black;
+  width: 40%;
+  border: 1px solid black;
   margin: auto;
   padding: 10px;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  right: 20%;
 }
 
 #books div:nth-child(odd) article {
@@ -109,4 +117,12 @@ section {
 #books div:nth-child(even) article {
   background: #ddd;
   border: 1px solid #ddd;
+}
+
+h1{
+  position: absolute;
+  top: 20%;
+  display: flex;
+  justify-content: center;
+  width: 50%;
 }
