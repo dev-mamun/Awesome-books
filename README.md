@@ -117,15 +117,15 @@ project.
 
 👤 **Abdullah AL mamun and Akpan Daniel** 
 
-- GitHub: [@dev-mamun](https://github.com/dev-mamun) and [@danutibe07](https://github.com/danutibe07)
-- Twitter: [@CoderKnight](https://twitter.com/CoderKnight) and [@Danielutibe07](https://twitter.com/Danielutibe07?t=2kvKPTZQ7IGCw2FugE9xCQ&s=09)
-- LinkedIn: [Mamun](https://www.linkedin.com/in/dev-mamun/) and [@AkpanDaniel](https://www.linkedin.com/in/akpan-daniel-785888215/)
+- GitHub: [@dev-mamun](https://github.com/dev-mamun) 
+- Twitter: [@CoderKnight](https://twitter.com/CoderKnight)
+- LinkedIn: [Mamun](https://www.linkedin.com/in/dev-mamun/) 
 
 👤 **Akpan Daniel** 
 
 - GitHub: [@danutibe07](https://github.com/danutibe07)
-- [@Danielutibe07](https://twitter.com/Danielutibe07?t=2kvKPTZQ7IGCw2FugE9xCQ&s=09)
-- [@AkpanDaniel](https://www.linkedin.com/in/akpan-daniel-785888215/)
+- Twitter: [@Danielutibe07](https://twitter.com/Danielutibe07?t=2kvKPTZQ7IGCw2FugE9xCQ&s=09)
+- LinkedIn: [@AkpanDaniel](https://www.linkedin.com/in/akpan-daniel-785888215/)
 
 <!-- CONTRIBUTING -->
 
