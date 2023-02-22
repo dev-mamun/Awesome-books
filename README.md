@@ -113,13 +113,19 @@ project.
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
-👤 **Abdullah AL mamun**
+👤 **Abdullah AL mamun** 
 
-- GitHub: [@dev-mamun](https://github.com/dev-mamun)
+- GitHub: [@dev-mamun](https://github.com/dev-mamun) 
 - Twitter: [@CoderKnight](https://twitter.com/CoderKnight)
-- LinkedIn: [Mamun](https://www.linkedin.com/in/dev-mamun/)
+- LinkedIn: [Mamun](https://www.linkedin.com/in/dev-mamun/) 
+
+👤 **Akpan Daniel** 
+
+- GitHub: [@danutibe07](https://github.com/danutibe07)
+- Twitter: [@Danielutibe07](https://twitter.com/Danielutibe07?t=2kvKPTZQ7IGCw2FugE9xCQ&s=09)
+- LinkedIn: [@AkpanDaniel](https://www.linkedin.com/in/akpan-daniel-785888215/)
 
 <!-- CONTRIBUTING -->
 
@@ -161,9 +167,5 @@ I would like to thank...
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly
-by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository).
-You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -24,11 +24,10 @@ class Interface {
   // adding book to the Interface
   static addBook(book) {
     const list = document.getElementById('books');
-    const bookDetails = document.createElement('div');
-    bookDetails.innerHTML = `<article>
+    const bookDetails = document.createElement('article');
+    bookDetails.innerHTML = `
         <div>"${book.title}" by ${book.author}</div>
-        <button value="${book.title}" class="btn-danger delete">Remove</button>
-        </article>
+        <button data-title="${book.title}" data-author="${book.author}" class="btn-danger delete">Remove</button>
         `;
     list.appendChild(bookDetails);
   }
@@ -40,10 +39,10 @@ class Interface {
   }
 
   // Deleting books
-  static deleteBook(del, tit) {
-    if (del.classList.contains('delete')) {
-      del.parentElement.remove();
-      Store.removeBook(tit)
+  static deleteBook(target) {
+    if (target.classList.contains('delete')) {
+      target.parentElement.remove();
+      Store.removeBook(target);
       Interface.showAlert('Book has been deleted', 'error');
     }
   }
@@ -73,7 +72,6 @@ class Store {
     } else {
       books = JSON.parse(localStorage.getItem('books'));
     }
-
     return books;
   }
 
@@ -83,14 +81,13 @@ class Store {
     localStorage.setItem('books', JSON.stringify(books));
   }
 
-  static removeBook(title) {
+  static removeBook(target) {
     let books = Store.getBooks();
-
-    books.forEach((book, index) => {
-      if (book.title === title) {
-        books.splice(index, 1);
-      }
-    });
+    let title = target.dataset.title;
+    let author = target.dataset.author;
+    books = books.filter((item) =>
+        item.title !== title || item.author !== author,
+    );
 
     localStorage.setItem('books', JSON.stringify(books));
   }
@@ -129,8 +126,7 @@ document.onreadystatechange = () => {
 
 // Remove book
     document.querySelector('#books').addEventListener('click', (e) => {
-      console.log(e.target.value)
-      Interface.deleteBook(e.target, e.target.value);
+      Interface.deleteBook(e.target);
     });
 
     const menu = document.querySelectorAll('.nav-menu');
@@ -165,7 +161,7 @@ document.onreadystatechange = () => {
     const currentTime = document.getElementById('time');
     const updateTime = () => {
       const now = new Date();
-      currentTime.innerHTML = now.toDateString() +", "+ now.toLocaleTimeString('en-US');
+      currentTime.innerHTML = now.toDateString() + ", " + now.toLocaleTimeString('en-US');
     };
     updateTime();
     setInterval(updateTime, 1000);

@@ -22,7 +22,7 @@
 <body>
 <main>
     <header>
-        <nav class="nav-bar hidden">
+        <nav class="nav-bar">
             <a href="index.html" class="nav-branding" title="Awesome Books" rel="noopener noreferrer">Awesome Books</a>
             <ul class="menu">
                 <li><a id="list" class="nav-menu" href="#showlist">List</a></li>
@@ -30,22 +30,29 @@
                 <li><a id="contact" class="nav-menu" href="#contactus">Contact</a></li>
             </ul>
         </nav>
-        <div id="time" class="hidden">
-            <time></time>
-        </div>
     </header>
+    <div id="time">
+        <time></time>
+    </div>
     <h1 id="heading">All awesome books</h1>
     <section id="books"></section>
-    <section id="book-frm">
-        <h1 id="">Add new book</h1>
+    <section id="book-frm" class="hidden">
         <div class="addnewbook">
             <input type="text" placeholder="Title" id="title" value="" required />
             <input type="text" placeholder="Author" id="author" required />
             <button type="button" id="addbook" class="btn-default">Add</button>
         </div>
     </section>
-    <scction id="contacts" class="hidden"></scction>
-    <footer class="hidden">
+    <section id="contacts" class="contacts hidden">
+        <h3>Do you have any questions or you just want to say "Hello!!" ?</h3>
+        <h4>you can reach out to us!</h4>
+        <ul>
+            <li>e-mail: danielutibe07@gmail.com</li>
+            <li>Phone number: +2349053164231</li>
+            <li>Address: Lagos, Nigeria</li>
+        </ul>
+    </section>
+    <footer>
         Copyright &nbsp<i class="fa-regular fa-copyright"></i>&nbsp All rights reserved 2023
     </footer>
 </main>
