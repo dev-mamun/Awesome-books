@@ -1,4 +1,4 @@
-<!-- 
+<!--
  * Project: Awesome-books
  * File: index.html
  * Created: 2/20/23
@@ -20,13 +20,36 @@
     <link rel="stylesheet" href="css/books.css">
 </head>
 <body>
-    <div class="books" id="books"></div>
-    <div class="addnewbook">
-        <h2 class="titletag">Add a new book</h2>
-        <input type="text" placeholder="Title" id="title">
-        <input type="text" placeholder="Author" id="author">
-        <button type="button" id="addbook">ADD</button>
-    </div>
+<main>
+    <header>
+        <nav class="nav-bar hidden">
+            <a href="index.html" class="nav-branding" title="Awesome Books" rel="noopener noreferrer">Awesome Books</a>
+            <ul class="menu">
+                <li><a id="list" class="nav-menu" href="#showlist">List</a></li>
+                <li><a id="add" class="nav-menu" href="#addnew">Add New</a></li>
+                <li><a id="contact" class="nav-menu" href="#contactus">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="time" class="hidden">
+            <time></time>
+        </div>
+    </header>
+    <h1 id="heading">All awesome books</h1>
+    <section id="books"></section>
+    <section id="book-frm">
+        <h1 id="">Add new book</h1>
+        <div class="addnewbook">
+            <input type="text" placeholder="Title" id="title" value="" required />
+            <input type="text" placeholder="Author" id="author" required />
+            <button type="button" id="addbook" class="btn-default">Add</button>
+        </div>
+    </section>
+    <scction id="contacts" class="hidden"></scction>
+    <footer class="hidden">
+        Copyright &nbsp<i class="fa-regular fa-copyright"></i>&nbsp All rights reserved 2023
+    </footer>
+</main>
+
 <script src="https://kit.fontawesome.com/cddc9bcff3.js" crossorigin="anonymous"></script>
 <script src="js/books.js"></script>
 </body>

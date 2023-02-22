@@ -13,6 +13,21 @@
 
 body {
   font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+button,
+input {
+  padding: 10px;
+  outline: none;
+}
+
+input {
+  width: 100%;
 }
 
 .w-90 {
@@ -29,23 +44,22 @@ img {
 }
 
 .btn-success {
-  width: auto;
-  height: 48px;
+  min-width: 100px;
+  height: 40px;
   color: #fff;
   display: inline-block;
   text-decoration: none;
   font-style: normal;
   font-weight: 800;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: 15px;
   letter-spacing: 0.03em;
-  padding: 12px;
+  padding: 10px;
   transition: 0.2s all;
   background: #008552;
   border-radius: 4px;
   border: 0;
   cursor: pointer;
-  margin: 15px 0;
 }
 
 .btn-success::before {
@@ -74,23 +88,20 @@ img {
 }
 
 .btn-danger {
-  width: auto;
-  height: 48px;
+  min-width: 100px;
+  height: 40px;
   color: #fff;
   display: inline-block;
   text-decoration: none;
   font-style: normal;
   font-weight: 800;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  padding: 12px;
+  font-size: 15px;
+  padding: 10px;
   transition: 0.2s all;
   background: #ef523c;
   border-radius: 4px;
   border: 0;
   cursor: pointer;
-  margin: 15px 0;
 }
 
 .btn-danger::before {
@@ -119,23 +130,22 @@ img {
 }
 
 .btn-default {
-  width: auto;
-  height: 48px;
+  min-width: 100px;
+  height: 40px;
   color: black;
   display: inline-block;
   text-decoration: none;
   font-style: normal;
   font-weight: 800;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: 15px;
   letter-spacing: 0.03em;
-  padding: 12px;
+  padding: 10px;
   transition: 0.2s all;
   background: white;
   border-radius: 4px;
   border: 1px solid #d3d3d3;
   cursor: pointer;
-  margin: 15px 0;
 }
 
 .btn-default::before {
@@ -161,4 +171,8 @@ img {
 
 .btn-default:hover::before {
   height: 100%;
+}
+
+.hidden {
+  display: none !important;
 }
