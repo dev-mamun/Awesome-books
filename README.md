@@ -117,9 +117,9 @@ project.
 
 👤 **Abdullah AL mamun**
 
-- GitHub: [@dev-mamun](https://github.com/dev-mamun)
-- Twitter: [@CoderKnight](https://twitter.com/CoderKnight)
-- LinkedIn: [Mamun](https://www.linkedin.com/in/dev-mamun/)
+- GitHub: [@dev-mamun](https://github.com/dev-mamun) & [@danutibe07](https://github.com/danutibe07)
+- Twitter: [@CoderKnight](https://twitter.com/CoderKnight) & [@Danielutibe07](https://twitter.com/Danielutibe07?t=2kvKPTZQ7IGCw2FugE9xCQ&s=09)
+- LinkedIn: [Mamun](https://www.linkedin.com/in/dev-mamun/) & [@AkpanDaniel] (https://www.linkedin.com/in/akpan-daniel-785888215/)
 
 <!-- CONTRIBUTING -->
 
