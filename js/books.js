@@ -85,10 +85,11 @@ class Store {
 
   static removeBook(title) {
     let books = Store.getBooks();
-
+    console.log('removeBook: ',books);
     books.forEach((book, index) => {
       if (book.title === title) {
-        books.splice(index, 1);
+        console.log('index: ',index);
+        //books.splice(index, 1);
       }
     });
 
